@@ -1,4 +1,6 @@
-# AclogGate
+# AclogBus
+
+This is a reference project of ARSSB (Amateur Radio Software Standard Bus) Foundation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
