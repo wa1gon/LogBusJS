@@ -2,6 +2,13 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body {
-padding:2em 2em;
+/* padding:2em 2em; */
 background:lightgray;
+}
+
+.mincard {
+min-height:40px;
+background-color:white;
+text-align:center;
+
 }

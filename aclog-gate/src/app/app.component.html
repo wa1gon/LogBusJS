@@ -3,19 +3,23 @@
 
   <md-toolbar color="primary">
 
-    <span>Amateur Radio Software Bus</span>
+    <!-- <span>Amateur Radio Software Bus</span> -->
     <span class="example-spacer"></span>
-    <button md-button [mdMenuTriggerFor]="appMenu">
-      <md-icon>menu</md-icon> Menu</button>
-    <button md-button [mdMenuTriggerFor]="appMenu">
-      Log</button>
+    <button md-button >
+      <md-icon>menu</md-icon></button>
+    <button md-button [mdMenuTriggerFor]="logMenu">Log</button>
   </md-toolbar>
 
-  <md-menu #appMenu="mdMenu">
-    <a routerLink = '/addContact'><button md-menu-item >Add Contact</button></a>
+<md-menu #appMenu="mdMenu">
+</md-menu>
+  <md-menu #logMenu="mdMenu">
+
+    <a routerLink='/addContact'><button md-menu-item>Add Contact</button></a>
     <button md-menu-item>Settings</button>
     <button md-menu-item>Help</button>
-     <a routerLink = '/about'><button md-menu-item >About</button></a>
+    <a routerLink='/about'>
+      <button md-menu-item>About</button>
+    </a>
 
   </md-menu>
 

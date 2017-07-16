@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 
 import {
   MdButtonModule, MdCheckboxModule, MdMenuModule,
-  MdIconModule, MdToolbarModule
+  MdIconModule, MdToolbarModule, MdInputModule, MdInputContainer
 } from '@angular/material';
 import { AboutComponent } from './about/about.component';
 import { ListLogComponent } from './list-log/list-log.component';
@@ -39,9 +39,11 @@ const appRoutes: Routes = [
     MdMenuModule,
     MdIconModule,
     MdToolbarModule,
+    MdInputModule,
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
