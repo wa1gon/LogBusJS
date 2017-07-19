@@ -1,10 +1,12 @@
+
 import { WelcomeComponent } from './home/welcome.component';
 import { Routes, RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Component } from '@angular/core';
+import { NgModule, Component, ViewEncapsulation } from '@angular/core';
 import { HttpModule, Http } from '@angular/http';
 import { AppComponent } from './app.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {
   MdButtonModule, MdCheckboxModule, MdMenuModule,
@@ -14,7 +16,6 @@ import { AboutComponent } from './about/about.component';
 import { ListLogComponent } from './list-log/list-log.component';
 import { LogContactComponent } from './log-contact/log-contact.component';
 import { StaticDataService } from './services/static-data/static-data.service';
-
 
 
 const appRoutes: Routes = [
@@ -43,7 +44,8 @@ const appRoutes: Routes = [
     MdToolbarModule,
     MdInputModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FlexLayoutModule
   ],
 
   providers: [StaticDataService],
