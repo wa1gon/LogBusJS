@@ -13,6 +13,8 @@ import {
 import { AboutComponent } from './about/about.component';
 import { ListLogComponent } from './list-log/list-log.component';
 import { LogContactComponent } from './log-contact/log-contact.component';
+import { StaticDataService } from './services/static-data/static-data.service';
+
 
 
 const appRoutes: Routes = [
@@ -44,7 +46,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
 
-  providers: [],
+  providers: [StaticDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
