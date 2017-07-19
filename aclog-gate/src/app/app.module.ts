@@ -44,8 +44,9 @@ const appRoutes: Routes = [
     MdToolbarModule,
     MdInputModule,
     HttpModule,
+    FlexLayoutModule,
     RouterModule.forRoot(appRoutes),
-    FlexLayoutModule
+
   ],
 
   providers: [StaticDataService],
