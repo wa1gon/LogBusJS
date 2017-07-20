@@ -13,4 +13,24 @@
     height: 100px;
     margin: 10px;
 }
+.datepicker {
+  margin-top: -6px;
+}
+.navBar {
+background-color:yellow;
+
+}
+.topBar {
+  background-color:green;
+}
+.form {
+  background-color:skyblue;
+}
+.sideBar {
+background-color:red;
+
+}
+.footer {
+background-color:goldenrod;
+}
 
