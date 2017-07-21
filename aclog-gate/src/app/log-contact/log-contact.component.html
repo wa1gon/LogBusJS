@@ -15,96 +15,96 @@
       <!-- <md-card-title>Contact Entry Form</md-card-title> -->
 
 
-      <!-- <form fxLayout="row" class="example-form"> -->
-      <div fxLayout="row" fxLayoutWrap fxLayoutAlign="start stretch" class="mincard minform">
+      <form fxLayout="row" class="example-form">
+        <div fxLayout="row" fxLayoutWrap fxLayoutAlign="start stretch" class="mincard minform">
 
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="Call">
-          </md-input-container>
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="Call">
+            </md-input-container>
+          </div>
+
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class=" datepicker">
+              <input mdInput type="date" placeholder="Date">
+            </md-input-container>
+          </div>
+
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="Band">
+            </md-input-container>
+          </div>
+
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="Mode">
+            </md-input-container>
+          </div>
+
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="Power">
+            </md-input-container>
+          </div>
+
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class=" datepicker">
+              <input type="time" mdInput placeholder="Time On">
+            </md-input-container>
+          </div>
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="Sent">
+            </md-input-container>
+          </div>
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="Rec">
+            </md-input-container>
+          </div>
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="Country">
+            </md-input-container>
+          </div>
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="Name">
+            </md-input-container>
+          </div>
+
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="State">
+            </md-input-container>
+          </div>
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="County">
+            </md-input-container>
+          </div>
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput placeholder="Frequency">
+            </md-input-container>
+          </div>
+          <div fxLayoutAlign="left ">
+            <md-input-container fxFlex class="mdInp">
+              <input mdInput #postalCode maxlength="5" placeholder="Other">
+              <md-hint align="end">{{postalCode.value.length}} / 5</md-hint>
+            </md-input-container>
+          </div>
         </div>
 
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width datepicker">
-            <input mdInput type="date" placeholder="Date">
-          </md-input-container>
-        </div>
-
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="Band">
-          </md-input-container>
-        </div>
-
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="Mode">
-          </md-input-container>
-        </div>
-
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="Power">
-          </md-input-container>
-        </div>
-
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class=" datepicker">
-            <input type="time" mdInput placeholder="Time On">
-          </md-input-container>
-        </div>
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="Sent">
-          </md-input-container>
-        </div>
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="Rec">
-          </md-input-container>
-        </div>
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="Country">
-          </md-input-container>
-        </div>
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="Name">
-          </md-input-container>
-        </div>
-
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="State">
-          </md-input-container>
-        </div>
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="County">
-          </md-input-container>
-        </div>
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput placeholder="Frequency">
-          </md-input-container>
-        </div>
-        <div fxLayoutAlign="left ">
-          <md-input-container fxFlex class="example-full-width">
-            <input mdInput #postalCode maxlength="5" placeholder="Other">
-            <md-hint align="end">{{postalCode.value.length}} / 5</md-hint>
-          </md-input-container>
-        </div>
-      </div>
+      </form>
     </div>
-    <!-- </form> -->
     <!-- </md-card-content>
       </md-card> -->
 
     <div fxFlex="20%" class="sideBar">Side bar</div>
   </div>
   <div fxLayout="row" class="footer">
-    <div class="footer"> footer
-    </div>
+    <div class="footer"> footer </div>
   </div>
 </div>
