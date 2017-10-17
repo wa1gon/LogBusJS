@@ -10,7 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {
   MdButtonModule, MdCheckboxModule, MdMenuModule,
-  MdIconModule, MdToolbarModule, MdInputModule, MdInputContainer
+  MdIconModule, MdToolbarModule, MdInputModule, MdInputContainer, MdSelectModule
 } from '@angular/material';
 import { AboutComponent } from './about/about.component';
 import { ListLogComponent } from './list-log/list-log.component';
@@ -43,9 +43,10 @@ const appRoutes: Routes = [
     MdIconModule,
     MdToolbarModule,
     MdInputModule,
+    MdSelectModule,
     HttpModule,
     FlexLayoutModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes)
 
   ],
 

@@ -19,27 +19,31 @@
         <div fxLayout="row" fxLayoutWrap fxLayoutAlign="start stretch" class="mincard minform">
 
           <div fxLayoutAlign="left" fxFlex="20%" class="mdInp">
-            <md-input-container  >
+            <md-input-container>
               <input mdInput placeholder="Call">
             </md-input-container>
           </div>
 
           <div fxLayoutAlign="left" fxFlex="20%" class="mdInp">
-            <md-input-container  class=" datepicker">
+            <md-input-container class=" datepicker">
               <input mdInput type="date" placeholder="Date">
             </md-input-container>
           </div>
 
           <div fxLayoutAlign="left" fxFlex="20%" class="mdInp">
-            <md-input-container >
+            <md-input-container>
               <input mdInput placeholder="Band">
             </md-input-container>
           </div>
 
           <div fxLayoutAlign="left" fxFlex="20%">
-            <md-input-container class="mdInp">
-              <input mdInput placeholder="Mode">
-            </md-input-container>
+
+            <md-select placeholder="Mode">
+              <md-option *ngFor="let mode of modes" [value]="mode.value">
+                {{ mode.viewValue }}
+              </md-option>
+            </md-select>
+
           </div>
 
           <div fxLayoutAlign="left" fxFlex="20%">
@@ -59,17 +63,17 @@
             </md-input-container>
           </div>
           <div fxLayoutAlign="left" fxFlex="20%">
-            <md-input-container  class="mdInp">
+            <md-input-container class="mdInp">
               <input mdInput placeholder="Rec">
             </md-input-container>
           </div>
           <div fxLayoutAlign="left" fxFlex="20%">
-            <md-input-container  class="mdInp">
+            <md-input-container class="mdInp">
               <input mdInput placeholder="Country">
             </md-input-container>
           </div>
           <div fxLayoutAlign="left" fxFlex="20%">
-            <md-input-container  class="mdInp">
+            <md-input-container class="mdInp">
               <input mdInput placeholder="Name">
             </md-input-container>
           </div>
